@@ -6,6 +6,7 @@ class TextType(Enum):
     CODE = 3 # `Code text`
     LINK = 4 # [anchor text] (url)
     IMAGE = 5 # ![alt text] (url)
+    TEXT = 6 # Regular text without formatting
 
 class TextNode:
     def __init__(self, text, text_type: TextType, url=None):
